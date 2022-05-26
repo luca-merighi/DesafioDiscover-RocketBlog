@@ -1,0 +1,124 @@
+#blog {
+    background-color: var(--light-purple);
+}
+
+#blog figure img {
+    width: 100%;
+}
+
+#blog .posts-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+#blog .posts-links a {
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 100%;
+}
+
+#blog .posts-links a span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--dark-bg);
+}
+
+#blog .posts-links a h4 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--purple);
+    font-size: 1.25rem;
+}
+
+#blog .posts-links a p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--dark-bg);
+}
+
+#blog .other-posts {
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+#blog .other-posts a {
+    text-decoration: none;
+}
+
+#blog .other-posts a img {
+    width: 100%;
+}
+
+#blog .other-posts a .post-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    width: 100%;
+}
+
+#blog .other-posts a .post-text span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--dark-bg);
+}
+
+#blog .other-posts a .post-text h4 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--purple);
+    font-size: 1.25rem;
+}
+
+#blog .other-posts a .post-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--dark-bg);
+}
+
+@media(min-width: 1024px) {
+    #blog {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        display: grid;
+        grid-template-areas: 
+        'image posts-link'
+        'posts posts';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 25rem 1fr;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #blog figure img {
+        width: 100%;
+        grid-area: image;
+    }
+
+    #blog .posts-links {
+        grid-area: posts-link;
+    }
+
+    #blog .other-posts {
+        grid-area: posts;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #blog .other-posts a img {
+        width: 20rem;
+    }
+
+    #blog .other-posts a .post-text {
+        width: 20rem;
+    }
+}

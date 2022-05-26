@@ -1,0 +1,13 @@
+.footer {
+    padding: 1rem 0;
+}
+
+.footer address {
+    text-align: center;
+    font: 400 1rem 'Roboto';
+    color: var(--light-purple);
+}
+
+.footer address span {
+    color: var(--green);
+}
