@@ -13,4 +13,4 @@ A página possuí semântica, responsividade e acessibilidade com **JavaScript**
 </div>
 <br/>
 
-### [Link para a Página]( "Rocket Blog")
+### [Link para a Página](https://luca-merighi.github.io/DesafioDiscover-RocketBlog/ "Rocket Blog")
